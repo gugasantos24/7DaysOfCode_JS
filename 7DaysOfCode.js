@@ -48,3 +48,40 @@ if (resposta == 1) {
 }
 
 // Dia 3
+
+let escolhaArea = prompt("Você deseja seguir na área de Front-End ou Back-End? (Digite 'Front-End' ou 'Back-End')");
+let escolhaTecnologia = '';
+
+if (escolhaArea ==='Front-End') {
+    let tecnologiaFront = prompt("Ótima Escolha! Você quer aprender React ou Vue?");
+    escolhaTecnologia = tecnologiaFront;
+    console.log(`Você escolheu ${escolhaTecnologia} para Front-End.`);
+} else if (escolhaArea ==='Back-End') {
+    let tecnologiaBack = prompt("Ótima Escolha! Você quer aprender C# ou Java?");
+    escolhaTecnologia = tecnologiaBack;
+    console.log(`Você escolheu ${escolhaTecnologia} para Back-End.`);
+} else {
+    console.log("Opção de área inválida. Por favor, recarregue a página e tente novamente.");   
+} 
+
+let escolhaCarreira = prompt("Você deseja seguir se especializando na área escolhida (digite 1) ou se desenvolver para se tornar Fullstack (digite 2)?");
+
+if (escolhaCarreira === '1') {
+    console.log("Ótimo, focar em uma área é uma excelente estratégia!");
+} else if (escolhaCarreira === '2') {
+    console.log("Perfeito! Ser Fullstack abre muitas portas, é importante saber um pouco de tudo.");
+} else {
+    console.log("Opção de caminho de carreira inválida. Por favor, recarregue a página e tente novamente.");
+}
+
+let novaTecnologia = prompt("Quais são as tecnologias que você deseja se especializar?");
+
+while (novaTecnologia != 'não') {
+    console.log(`Aprender ${novaTecnologia} é muito importante `);
+    novaTecnologia = prompt("Tem mais alguma tecnologia que você gostaria de aprender?");
+}
+
+console.log('Muito bem! Continue se esforçando nos seus estudos.');
+
+
+// Dia 4
