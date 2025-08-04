@@ -1,4 +1,4 @@
-// Dia 1
+// Dia 1 - Operações Booleanas
 
 let numeroUm = 1;
 let stringUm = '1';
@@ -29,7 +29,7 @@ if (numeroDez == stringDez) {
 }
 
 
-// Dia 2 + Exercício Opcional
+// Dia 2 - Variáveis
 
 let nome = prompt("Qual seu nome?");
 let idade = prompt("Quantos anos você tem?");
@@ -47,7 +47,7 @@ if (resposta == 1) {
     console.log("Resposta inválida! Tente novamente.");
 }
 
-// Dia 3
+// Dia 3 - Fluxo de Decisão
 
 let escolhaArea = prompt("Você deseja seguir na área de Front-End ou Back-End? (Digite 'Front-End' ou 'Back-End')");
 let escolhaTecnologia = '';
@@ -84,4 +84,26 @@ while (novaTecnologia != 'não') {
 console.log('Muito bem! Continue se esforçando nos seus estudos.');
 
 
-// Dia 4
+// Dia 4 - Mais Loops e Randomização
+
+function gerarNumeroAleatório() {
+    return Math.floor(Math.random() * (10 - 0));
+}
+
+let numeroSecreto = gerarNumeroAleatório();
+let respostaNumero = '';
+
+for(let numeroTentativas = 0; numeroTentativas < 3; numeroTentativas++) {
+    respostaNumero = prompt('Adivinhe o número de 0 a 10: ');
+    if (respostaNumero == numeroSecreto) {
+        alert(`Parabéns! você acertou o número secreto ${numeroSecreto}.`);
+        break;
+    } else if (respostaNumero != numeroSecreto) {
+        alert("Errou!");
+    }
+}
+
+console.log(`Infelizmente suas chances acabaram, o número secreto era ${numeroSecreto}.`);
+
+// Dia 5 - 
+
