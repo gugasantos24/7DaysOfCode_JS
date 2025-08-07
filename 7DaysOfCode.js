@@ -87,7 +87,7 @@ console.log('Muito bem! Continue se esforçando nos seus estudos.');
 // Dia 4 - Mais Loops e Randomização
 
 function gerarNumeroAleatório() {
-    return Math.floor(Math.random() * (10 - 0));
+    return Math.floor(Math.random() * (10 - 0 + 1) + 0);
 }
 
 let numeroSecreto = gerarNumeroAleatório();
@@ -105,5 +105,71 @@ for(let numeroTentativas = 0; numeroTentativas < 3; numeroTentativas++) {
 
 console.log(`Infelizmente suas chances acabaram, o número secreto era ${numeroSecreto}.`);
 
-// Dia 5 - 
+// Dia 5 - Arrays e coleções + Dia 6 - Remoção de Arrays
+
+
+let laticinios = [];
+let congelados = [];
+let doces = [];
+let frutas = [];
+let adicionarMais = 'sim';
+
+
+while (adicionarMais != 'não') {
+    adicionarMais = prompt("Você deseja adicionar ou remover mais item a lista de compras? Responda 'sim', 'não' ou ' remover.");
+    
+    while (adicionarMais != 'sim' && adicionarMais != 'não' && adicionarMais != 'remover') {
+        alert("Resposta inválida!");
+        adicionarMais = prompt("Você deseja adicionar ou remover mais item a lista de compras? Responda 'sim', 'não' ou ' remover.");
+    } if (adicionarMais === 'não') {
+        alert("Obrigado pelo preferência.");
+        break;
+    } 
+    if (adicionarMais == 'sim'){
+        item = prompt("Qual comida você quer adicicionar?");
+        categoria = prompt("Em qual categoria ele pertence: laticinios, congelados, doces ou frutas?");
+
+        if (categoria === 'laticinios') {
+            laticinios.push(item);
+        } else if (categoria === 'congelados') {
+            congelados.push(item);
+        } else if (categoria === 'doces') {
+            doces.push(item);
+        } else if (categoria === 'frutas') {
+            frutas.push(item);
+        } else {
+            alert("Resposta inválida!");
+        }
+    } else if (adicionarMais === 'remover') {
+        
+        if (laticinios.length === 0 && congelados.length === 0 && doces.length === 0 && frutas.length === 0);
+            alert("O carrinho de compras esta vazio.");
+        } else {
+            remover = prompt(`Seu carrinho de compras possui:\n Laticínios:${laticinios}\n Congelados:${congelados}\n Doces:${doces}\n Frutas:${frutas}, qual item você deseja remover?`);
+        
+        if (laticinios.indexOf(remover) != -1) {
+            laticinios.splice(laticinios.indexOf(remover), 1);
+            alert(`O item ${remover} foi removido.`);
+        } else if (congelados.indexOf(remover) != -1){
+            congelados.splice(congelados.indexOf(remover), 1);
+            alert(`O item ${remover} foi removido.`);
+        } else if (doces.indexOf(remover) != -1) {
+            doces.splice(doces.indexOf(remover), 1);
+            alert(`O item ${remover} foi removido.`);
+        } else if (frutas.indexOf(remover) != -1) {
+            frutas.splice(frutas.indexOf(remover), 1);
+            alert(`O item ${remover} foi removido.`);
+        } else {
+            alert("Esse item não foi encontrado no seu carrinho!");
+        }   
+    }
+}
+
+
+console.log(`Seu carrinho de compras possui:\n Laticínios:${laticinios}\n Congelados:${congelados}\n Doces:${doces}\n Frutas:${frutas}`);
+
+
+// Dia 7 - Funções em JavaScript
+
+
 
