@@ -172,4 +172,52 @@ console.log(`Seu carrinho de compras possui:\n Laticínios:${laticinios}\n Conge
 // Dia 7 - Funções em JavaScript
 
 
+function soma(numeroUm, numeroDois) {
+    return Number(numeroUm) + Number(numeroDois);
+}
+
+function subtracao(numeroUm, numeroDois) {
+    return Number(numeroUm) - Number(numeroDois);
+}
+
+function multiplicacao(numeroUm, numeroDois) {
+    return Number(numeroUm) * Number(numeroDois);
+}
+
+function divisao(numeroUm, numeroDois) {
+    return Number(numeroUm) - Number(numeroDois);
+}
+
+let numeroUm;
+let numeroDois;
+let operacao = '';
+
+do {
+    operacao = prompt("Qual operação você deseja realizar: 'soma', 'subtração', 'multiplicação', 'divisão'?");
+    while (operacao != 'soma'&& operacao != 'subtração'&& operacao != 'multiplicação' && operacao != 'divisão');
+    alert("Operação inválida!");
+    operacao = prompt("Qual operação você deseja realizar: 'soma', 'subtração', 'multiplicação', 'divisão'?");
+}
+
+numeroUm = prompt("Digite o primeiro número:\n");
+numeroDois = prompt("Digite o segundo número:\n");
+
+switch(operacao) {
+    case 'soma':
+        console.log(`O resultado da soma entre ${numeroUm} e ${numeroDois} é igual a ${soma(numeroUm, numeroDois)}`);
+        break;
+    case 'subtração':
+        console.log(`O resultado da subtração entre ${numeroUm} e ${numeroDois} é igual a ${subtracao(numeroUm, numeroDois)}`);
+        break;
+    case 'multiplicação':
+        console.log(`O resultado da multiplicação entre ${numeroUm} e ${numeroDois} é igual a ${multiplicacao(numeroUm, numeroDois)}`);
+        break;
+    case 'divisão':
+        console.log(`O resultado da divisão entre ${numeroUm} e ${numeroDois} é igual a ${divisao(numeroUm, numeroDois)}`);
+        break;
+}
+
+
+console.log("Até a proxima!");
+
 
