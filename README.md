@@ -24,6 +24,6 @@ O projeto está dividido em seções, cada uma correspondendo a um dia de desafi
 ## Como executar o código
 1. Abra o arquivo 7DaysOfCode.js em um editor de código.
 
-2 .Abra o arquivo HTML que está vinculado ao arquivo 7DaysOfCode.js e copie e cole o código no console do seu navegador.
+2. Abra o arquivo HTML que está vinculado ao arquivo 7DaysOfCode.js e copie e cole o código no console do seu navegador.
 
-3 .Execute o script e interaja com os prompts para ver a lógica em ação.
+3. Execute o script e interaja com os prompts para ver a lógica em ação.
