@@ -20,3 +20,10 @@ O projeto está dividido em seções, cada uma correspondendo a um dia de desafi
 **Dia 5 e 6** - Arrays e coleções + Remoção de Arrays: Criação de uma lista de compras dinâmica, onde o usuário pode adicionar ou remover itens em diferentes categorias.
 
 **Dia 7** - Funções em JavaScript: Uma calculadora simples que utiliza funções para realizar operações de soma, subtração, multiplicação e divisão.
+
+## Como executar o código
+1. Abra o arquivo 7DaysOfCode.js em um editor de código.
+
+2 .Abra o arquivo HTML que está vinculado ao arquivo 7DaysOfCode.js e copie e cole o código no console do seu navegador.
+
+3 .Execute o script e interaja com os prompts para ver a lógica em ação.
